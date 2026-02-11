@@ -1,0 +1,130 @@
+[7.732s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[7.732s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff941bb280>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff945ac670>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff945ac670>>)
+[8.139s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[8.140s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[8.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[8.141s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[8.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[8.142s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[8.143s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/burger/jeff_anu_ws'
+[8.144s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[8.145s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[8.147s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[8.149s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[8.150s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[8.152s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[8.153s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[8.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[8.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[8.312s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[8.313s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[8.314s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[8.314s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[8.315s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[8.316s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[8.318s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[8.319s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[8.321s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[8.322s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[8.323s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[8.325s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[8.326s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[8.327s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[8.328s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[8.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[8.329s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[8.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[8.330s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[8.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[8.331s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[8.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[8.332s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[8.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[8.333s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[8.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[8.334s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[8.335s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[8.336s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extensions ['ignore', 'ignore_ament_install']
+[8.337s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extension 'ignore'
+[8.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extension 'ignore_ament_install'
+[8.338s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extensions ['colcon_pkg']
+[8.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extension 'colcon_pkg'
+[8.339s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extensions ['colcon_meta']
+[8.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extension 'colcon_meta'
+[8.340s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extensions ['ros']
+[8.341s] Level 1:colcon.colcon_core.package_identification:_identify(src/image_follow) by extension 'ros'
+[8.361s] DEBUG:colcon.colcon_core.package_identification:Package 'src/image_follow' with type 'ros.ament_python' and name 'image_follow'
+[8.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[8.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[8.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[8.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[8.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[9.434s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[9.435s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[9.800s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/burger/jeff_anu_ws/install
+[9.984s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/burger/dontTouch_ws/install
+[10.183s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 206 installed packages in /opt/ros/humble
+[10.198s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[11.036s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'cmake_args' from command line to 'None'
+[11.037s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'cmake_target' from command line to 'None'
+[11.037s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[11.037s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'cmake_clean_cache' from command line to 'False'
+[11.038s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'cmake_clean_first' from command line to 'False'
+[11.038s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'cmake_force_configure' from command line to 'False'
+[11.038s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'ament_cmake_args' from command line to 'None'
+[11.039s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'catkin_cmake_args' from command line to 'None'
+[11.039s] Level 5:colcon.colcon_core.verb:set package 'image_follow' build argument 'catkin_skip_building_tests' from command line to 'False'
+[11.040s] DEBUG:colcon.colcon_core.verb:Building package 'image_follow' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/burger/jeff_anu_ws/build/image_follow', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/burger/jeff_anu_ws/install/image_follow', 'merge_install': False, 'path': '/home/burger/jeff_anu_ws/src/image_follow', 'symlink_install': False, 'test_result_base': None}
+[11.190s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[11.253s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[11.254s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/burger/jeff_anu_ws/src/image_follow' with build type 'ament_python'
+[11.255s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_follow', 'ament_prefix_path')
+[11.435s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[11.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/hook/ament_prefix_path.ps1'
+[11.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/hook/ament_prefix_path.dsv'
+[11.448s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/hook/ament_prefix_path.sh'
+[11.630s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.632s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[14.711s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/burger/jeff_anu_ws/src/image_follow'
+[14.780s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[14.780s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[19.837s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/burger/jeff_anu_ws/src/image_follow': PYTHONPATH=/home/burger/jeff_anu_ws/build/image_follow/prefix_override:/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/image_follow build --build-base /home/burger/jeff_anu_ws/build/image_follow/build install --record /home/burger/jeff_anu_ws/build/image_follow/install.log --single-version-externally-managed
+[25.696s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/burger/jeff_anu_ws/src/image_follow' returned '0': PYTHONPATH=/home/burger/jeff_anu_ws/build/image_follow/prefix_override:/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/image_follow build --build-base /home/burger/jeff_anu_ws/build/image_follow/build install --record /home/burger/jeff_anu_ws/build/image_follow/install.log --single-version-externally-managed
+[25.921s] Level 1:colcon.colcon_core.environment:checking '/home/burger/jeff_anu_ws/install/image_follow' for CMake module files
+[25.927s] Level 1:colcon.colcon_core.environment:checking '/home/burger/jeff_anu_ws/install/image_follow' for CMake config files
+[25.937s] Level 1:colcon.colcon_core.environment:checking '/home/burger/jeff_anu_ws/install/image_follow/lib'
+[25.939s] Level 1:colcon.colcon_core.environment:checking '/home/burger/jeff_anu_ws/install/image_follow/bin'
+[25.941s] Level 1:colcon.colcon_core.environment:checking '/home/burger/jeff_anu_ws/install/image_follow/lib/pkgconfig/image_follow.pc'
+[25.943s] Level 1:colcon.colcon_core.environment:checking '/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages'
+[25.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_follow', 'pythonpath')
+[26.129s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/hook/pythonpath.ps1'
+[26.134s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/hook/pythonpath.dsv'
+[26.138s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/hook/pythonpath.sh'
+[26.145s] Level 1:colcon.colcon_core.environment:checking '/home/burger/jeff_anu_ws/install/image_follow/bin'
+[26.146s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_follow)
+[26.419s] INFO:colcon.colcon_core.shell:Creating package script '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/package.ps1'
+[26.423s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/package.dsv'
+[26.427s] INFO:colcon.colcon_core.shell:Creating package script '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/package.sh'
+[26.430s] INFO:colcon.colcon_core.shell:Creating package script '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/package.bash'
+[26.434s] INFO:colcon.colcon_core.shell:Creating package script '/home/burger/jeff_anu_ws/install/image_follow/share/image_follow/package.zsh'
+[26.438s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/burger/jeff_anu_ws/install/image_follow/share/colcon-core/packages/image_follow)
+[26.439s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[26.440s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[26.441s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[26.441s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[26.538s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[26.539s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[26.539s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[26.539s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[26.542s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[26.543s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[26.619s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/burger/jeff_anu_ws/install/local_setup.ps1'
+[26.623s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/burger/jeff_anu_ws/install/_local_setup_util_ps1.py'
+[26.628s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/burger/jeff_anu_ws/install/setup.ps1'
+[26.697s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/burger/jeff_anu_ws/install/local_setup.sh'
+[26.700s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/burger/jeff_anu_ws/install/_local_setup_util_sh.py'
+[26.702s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/burger/jeff_anu_ws/install/setup.sh'
+[26.769s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/burger/jeff_anu_ws/install/local_setup.bash'
+[26.772s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/burger/jeff_anu_ws/install/setup.bash'
+[26.852s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/burger/jeff_anu_ws/install/local_setup.zsh'
+[26.855s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/burger/jeff_anu_ws/install/setup.zsh'

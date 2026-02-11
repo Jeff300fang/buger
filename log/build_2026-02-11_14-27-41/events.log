@@ -1,0 +1,215 @@
+[0.000000] (-) TimerEvent: {}
+[0.002265] (image_follow) JobQueued: {'identifier': 'image_follow', 'dependencies': OrderedDict()}
+[0.003920] (image_follow) JobStarted: {'identifier': 'image_follow'}
+[0.094259] (-) TimerEvent: {}
+[0.196274] (-) TimerEvent: {}
+[0.298346] (-) TimerEvent: {}
+[0.405560] (-) TimerEvent: {}
+[0.507072] (-) TimerEvent: {}
+[0.609036] (-) TimerEvent: {}
+[0.716152] (-) TimerEvent: {}
+[0.818077] (-) TimerEvent: {}
+[0.921619] (-) TimerEvent: {}
+[1.026341] (-) TimerEvent: {}
+[1.131620] (-) TimerEvent: {}
+[1.236306] (-) TimerEvent: {}
+[1.338287] (-) TimerEvent: {}
+[1.439830] (-) TimerEvent: {}
+[1.541165] (-) TimerEvent: {}
+[1.644289] (-) TimerEvent: {}
+[1.747508] (-) TimerEvent: {}
+[1.853203] (-) TimerEvent: {}
+[1.954583] (-) TimerEvent: {}
+[2.055894] (-) TimerEvent: {}
+[2.156719] (-) TimerEvent: {}
+[2.257576] (-) TimerEvent: {}
+[2.358651] (-) TimerEvent: {}
+[2.463444] (-) TimerEvent: {}
+[2.566320] (-) TimerEvent: {}
+[2.669235] (-) TimerEvent: {}
+[2.773697] (-) TimerEvent: {}
+[2.877813] (-) TimerEvent: {}
+[2.983006] (-) TimerEvent: {}
+[3.089292] (-) TimerEvent: {}
+[3.196153] (-) TimerEvent: {}
+[3.300759] (-) TimerEvent: {}
+[3.406968] (-) TimerEvent: {}
+[3.517432] (-) TimerEvent: {}
+[3.618781] (-) TimerEvent: {}
+[3.720768] (-) TimerEvent: {}
+[3.822422] (-) TimerEvent: {}
+[3.923723] (-) TimerEvent: {}
+[4.026436] (-) TimerEvent: {}
+[4.132004] (-) TimerEvent: {}
+[4.233597] (-) TimerEvent: {}
+[4.340018] (-) TimerEvent: {}
+[4.442153] (-) TimerEvent: {}
+[4.543700] (-) TimerEvent: {}
+[4.645226] (-) TimerEvent: {}
+[4.746521] (-) TimerEvent: {}
+[4.847822] (-) TimerEvent: {}
+[4.949389] (-) TimerEvent: {}
+[5.050749] (-) TimerEvent: {}
+[5.152167] (-) TimerEvent: {}
+[5.253625] (-) TimerEvent: {}
+[5.354915] (-) TimerEvent: {}
+[5.459658] (-) TimerEvent: {}
+[5.561038] (-) TimerEvent: {}
+[5.661887] (-) TimerEvent: {}
+[5.762769] (-) TimerEvent: {}
+[5.863645] (-) TimerEvent: {}
+[5.964418] (-) TimerEvent: {}
+[6.065230] (-) TimerEvent: {}
+[6.165961] (-) TimerEvent: {}
+[6.267382] (-) TimerEvent: {}
+[6.368859] (-) TimerEvent: {}
+[6.470389] (-) TimerEvent: {}
+[6.571691] (-) TimerEvent: {}
+[6.676014] (-) TimerEvent: {}
+[6.780826] (-) TimerEvent: {}
+[6.885677] (-) TimerEvent: {}
+[6.988620] (-) TimerEvent: {}
+[7.090261] (-) TimerEvent: {}
+[7.192439] (-) TimerEvent: {}
+[7.294125] (-) TimerEvent: {}
+[7.395597] (-) TimerEvent: {}
+[7.498363] (-) TimerEvent: {}
+[7.603624] (-) TimerEvent: {}
+[7.705155] (-) TimerEvent: {}
+[7.809466] (-) TimerEvent: {}
+[7.911804] (-) TimerEvent: {}
+[8.013412] (-) TimerEvent: {}
+[8.117459] (-) TimerEvent: {}
+[8.221515] (-) TimerEvent: {}
+[8.322743] (-) TimerEvent: {}
+[8.425116] (-) TimerEvent: {}
+[8.526397] (-) TimerEvent: {}
+[8.627715] (-) TimerEvent: {}
+[8.729207] (-) TimerEvent: {}
+[8.830509] (-) TimerEvent: {}
+[8.931856] (-) TimerEvent: {}
+[9.033414] (-) TimerEvent: {}
+[9.134757] (-) TimerEvent: {}
+[9.237987] (-) TimerEvent: {}
+[9.341683] (-) TimerEvent: {}
+[9.448737] (-) TimerEvent: {}
+[9.554030] (-) TimerEvent: {}
+[9.636316] (image_follow) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'develop', '--editable', '--build-directory', '/home/burger/jeff_anu_ws/build/image_follow/build', '--no-deps', 'install_data'], 'cwd': '/home/burger/jeff_anu_ws/build/image_follow', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,14031,0', 'USER': 'burger', 'SSH_CLIENT': '192.168.0.211 53166 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/burger/dontTouch_ws/install/v4l2_camera/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/burger', 'OLDPWD': '/home/burger/jeff_anu_ws/src', 'TERM_PROGRAM_VERSION': '3.2a', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/burger/jeff_anu_ws/install:/home/burger/dontTouch_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'burger', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'screen-256color', 'XDG_SESSION_ID': '3', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM_PROGRAM': 'tmux', 'ROS_DOMAIN_ID': '41', 'AMENT_PREFIX_PATH': '/home/burger/jeff_anu_ws/install/image_follow:/home/burger/dontTouch_ws/install/v4l2_camera:/home/burger/dontTouch_ws/install/turtlebot3:/home/burger/dontTouch_ws/install/turtlebot3_teleop:/home/burger/dontTouch_ws/install/turtlebot3_bringup:/home/burger/dontTouch_ws/install/turtlebot3_node:/home/burger/dontTouch_ws/install/turtlebot3_example:/home/burger/dontTouch_ws/install/turtlebot3_description:/home/burger/dontTouch_ws/install/ld08_driver:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/burger/jeff_anu_ws/build/image_follow', 'TURTLEBOT3_MODEL': 'burger', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.211 53166 192.168.0.174 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'LDS_MODEL': 'LDS-02', 'PYTHONPATH': '/home/burger/jeff_anu_ws/build/image_follow/prefix_override:/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages:/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages:/home/burger/dontTouch_ws/build/turtlebot3_teleop:/home/burger/dontTouch_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/burger/dontTouch_ws/build/turtlebot3_example:/home/burger/dontTouch_ws/install/turtlebot3_example/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'TMUX_PANE': '%5', 'CMAKE_PREFIX_PATH': '/home/burger/dontTouch_ws/install/v4l2_camera:/home/burger/dontTouch_ws/install/turtlebot3:/home/burger/dontTouch_ws/install/turtlebot3_bringup:/home/burger/dontTouch_ws/install/turtlebot3_node:/home/burger/dontTouch_ws/install/turtlebot3_description:/home/burger/dontTouch_ws/install/ld08_driver'}, 'shell': False}
+[9.654572] (-) TimerEvent: {}
+[9.757104] (-) TimerEvent: {}
+[9.858203] (-) TimerEvent: {}
+[9.959355] (-) TimerEvent: {}
+[10.061323] (-) TimerEvent: {}
+[10.165098] (-) TimerEvent: {}
+[10.266404] (-) TimerEvent: {}
+[10.369804] (-) TimerEvent: {}
+[10.478063] (-) TimerEvent: {}
+[10.580165] (-) TimerEvent: {}
+[10.681636] (-) TimerEvent: {}
+[10.784344] (-) TimerEvent: {}
+[10.888645] (-) TimerEvent: {}
+[10.989975] (-) TimerEvent: {}
+[11.092037] (-) TimerEvent: {}
+[11.193447] (-) TimerEvent: {}
+[11.294691] (-) TimerEvent: {}
+[11.396057] (-) TimerEvent: {}
+[11.497594] (-) TimerEvent: {}
+[11.601213] (-) TimerEvent: {}
+[11.703612] (-) TimerEvent: {}
+[11.804851] (-) TimerEvent: {}
+[11.906488] (-) TimerEvent: {}
+[12.007782] (-) TimerEvent: {}
+[12.109151] (-) TimerEvent: {}
+[12.210452] (-) TimerEvent: {}
+[12.311902] (-) TimerEvent: {}
+[12.414893] (-) TimerEvent: {}
+[12.517285] (-) TimerEvent: {}
+[12.618689] (-) TimerEvent: {}
+[12.722893] (-) TimerEvent: {}
+[12.824457] (-) TimerEvent: {}
+[12.927907] (-) TimerEvent: {}
+[13.031425] (-) TimerEvent: {}
+[13.092300] (image_follow) StdoutLine: {'line': b'running develop\n'}
+[13.094522] (image_follow) StderrLine: {'line': b'/usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.\n'}
+[13.096773] (image_follow) StderrLine: {'line': b'!!\n'}
+[13.097940] (image_follow) StderrLine: {'line': b'\n'}
+[13.098901] (image_follow) StderrLine: {'line': b'        ********************************************************************************\n'}
+[13.099930] (image_follow) StderrLine: {'line': b'        Please avoid running ``setup.py`` and ``easy_install``.\n'}
+[13.100941] (image_follow) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[13.101975] (image_follow) StderrLine: {'line': b'        standards-based tools.\n'}
+[13.102911] (image_follow) StderrLine: {'line': b'\n'}
+[13.103827] (image_follow) StderrLine: {'line': b'        See https://github.com/pypa/setuptools/issues/917 for details.\n'}
+[13.104709] (image_follow) StderrLine: {'line': b'        ********************************************************************************\n'}
+[13.117983] (image_follow) StderrLine: {'line': b'\n'}
+[13.118961] (image_follow) StderrLine: {'line': b'!!\n'}
+[13.119888] (image_follow) StderrLine: {'line': b'  easy_install.initialize_options(self)\n'}
+[13.131700] (-) TimerEvent: {}
+[13.234751] (-) TimerEvent: {}
+[13.337963] (-) TimerEvent: {}
+[13.389687] (image_follow) StderrLine: {'line': b'/usr/local/lib/python3.10/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.\n'}
+[13.390887] (image_follow) StderrLine: {'line': b'!!\n'}
+[13.391260] (image_follow) StderrLine: {'line': b'\n'}
+[13.391557] (image_follow) StderrLine: {'line': b'        ********************************************************************************\n'}
+[13.391860] (image_follow) StderrLine: {'line': b'        Please avoid running ``setup.py`` directly.\n'}
+[13.392167] (image_follow) StderrLine: {'line': b'        Instead, use pypa/build, pypa/installer or other\n'}
+[13.392456] (image_follow) StderrLine: {'line': b'        standards-based tools.\n'}
+[13.392739] (image_follow) StderrLine: {'line': b'\n'}
+[13.393175] (image_follow) StderrLine: {'line': b'        See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.\n'}
+[13.393527] (image_follow) StderrLine: {'line': b'        ********************************************************************************\n'}
+[13.393886] (image_follow) StderrLine: {'line': b'\n'}
+[13.394273] (image_follow) StderrLine: {'line': b'!!\n'}
+[13.394684] (image_follow) StderrLine: {'line': b'  self.initialize_options()\n'}
+[13.438092] (-) TimerEvent: {}
+[13.538927] (-) TimerEvent: {}
+[13.640184] (-) TimerEvent: {}
+[13.744142] (-) TimerEvent: {}
+[13.846704] (-) TimerEvent: {}
+[13.950452] (-) TimerEvent: {}
+[14.054819] (-) TimerEvent: {}
+[14.159048] (-) TimerEvent: {}
+[14.261689] (-) TimerEvent: {}
+[14.364258] (-) TimerEvent: {}
+[14.465862] (-) TimerEvent: {}
+[14.567296] (-) TimerEvent: {}
+[14.670081] (-) TimerEvent: {}
+[14.771314] (-) TimerEvent: {}
+[14.874076] (-) TimerEvent: {}
+[14.977450] (-) TimerEvent: {}
+[15.078699] (-) TimerEvent: {}
+[15.187464] (-) TimerEvent: {}
+[15.288732] (-) TimerEvent: {}
+[15.390117] (-) TimerEvent: {}
+[15.491648] (-) TimerEvent: {}
+[15.593034] (-) TimerEvent: {}
+[15.609338] (image_follow) StdoutLine: {'line': b'running egg_info\n'}
+[15.693286] (-) TimerEvent: {}
+[15.790432] (image_follow) StdoutLine: {'line': b'writing image_follow.egg-info/PKG-INFO\n'}
+[15.794005] (-) TimerEvent: {}
+[15.802783] (image_follow) StdoutLine: {'line': b'writing dependency_links to image_follow.egg-info/dependency_links.txt\n'}
+[15.816810] (image_follow) StdoutLine: {'line': b'writing entry points to image_follow.egg-info/entry_points.txt\n'}
+[15.818175] (image_follow) StdoutLine: {'line': b'writing requirements to image_follow.egg-info/requires.txt\n'}
+[15.819254] (image_follow) StdoutLine: {'line': b'writing top-level names to image_follow.egg-info/top_level.txt\n'}
+[15.894289] (-) TimerEvent: {}
+[15.995757] (-) TimerEvent: {}
+[16.098136] (-) TimerEvent: {}
+[16.180980] (image_follow) StdoutLine: {'line': b"reading manifest file 'image_follow.egg-info/SOURCES.txt'\n"}
+[16.190960] (image_follow) StdoutLine: {'line': b"writing manifest file 'image_follow.egg-info/SOURCES.txt'\n"}
+[16.198368] (-) TimerEvent: {}
+[16.301719] (-) TimerEvent: {}
+[16.396081] (image_follow) StdoutLine: {'line': b'running build_ext\n'}
+[16.400517] (image_follow) StdoutLine: {'line': b'Creating /home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages/image-follow.egg-link (link to .)\n'}
+[16.402033] (-) TimerEvent: {}
+[16.409674] (image_follow) StdoutLine: {'line': b'Installing detector script to /home/burger/jeff_anu_ws/install/image_follow/lib/image_follow\n'}
+[16.416583] (image_follow) StdoutLine: {'line': b'Installing follower script to /home/burger/jeff_anu_ws/install/image_follow/lib/image_follow\n'}
+[16.419365] (image_follow) StdoutLine: {'line': b'\n'}
+[16.420510] (image_follow) StdoutLine: {'line': b'Installed /home/burger/jeff_anu_ws/build/image_follow\n'}
+[16.421722] (image_follow) StdoutLine: {'line': b'running install_data\n'}
+[16.502601] (-) TimerEvent: {}
+[16.605296] (-) TimerEvent: {}
+[16.697203] (image_follow) CommandEnded: {'returncode': 0}
+[16.705452] (-) TimerEvent: {}
+[16.808644] (-) TimerEvent: {}
+[16.910235] (-) TimerEvent: {}
+[17.011501] (-) TimerEvent: {}
+[17.040790] (image_follow) JobEnded: {'identifier': 'image_follow', 'rc': 0}
+[17.044553] (-) EventReactorShutdown: {}

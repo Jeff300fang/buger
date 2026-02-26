@@ -25,17 +25,25 @@ class Follower(Node):
         )
         self.previous_angle = 0.0
         self.previous_distrance = 0.0
+        self.last_msg_time = self.get_clock().now()
 
-        self.create_timer()
+        self.create_timer(0.05, self.timer_callback)
+        self.current_position = Float32MultiArray()
+        self.current_position.data = [0.0, 0.0]
 
     def position_callback(self, msg):
+        self.current_position = msg.data
+        self.last_msg_time = self.get_clock().now()
+
+
+    def timer_callback(self):
+        dt = (self.last_msg_time - self.get_clock().now()).nanoseconds * 1e-9
+        if dt > 0.1:
+            self.current_position = Float32MultiArray()
+            self.current_position.data = [0.0, 0.0]
         twist = Twist()
-        if msg.y > 0:
-            twist.angular.z = 0.4
-        elif msg.y < 0:
-            twist.angular.z = -0.4 
-        else:
-            twist.angular.z = 0.0
+        twist.angular.z = KP_ANGLE * self.current_position.data[1]
+        twist.linear.x = KP_DISTANCE * self.current_position.data[0]
         self.vel_pub.publish(twist)
 
 def main(args=None):

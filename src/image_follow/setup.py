@@ -21,6 +21,7 @@ setup(
     entry_points={
         'console_scripts': [
             'detector = image_follow.detector:main',
+            'lidar_detector = image_follow.lidar_detector:main',
             'follower = image_follow.follower:main'
         ],
     },

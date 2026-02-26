@@ -11,6 +11,7 @@ setup.py
 image_follow/__init__.py
 image_follow/detector.py
 image_follow/follower.py
+image_follow/lidar_detector.py
 image_follow.egg-info/PKG-INFO
 image_follow.egg-info/SOURCES.txt
 image_follow.egg-info/dependency_links.txt

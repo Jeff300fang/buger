@@ -2,7 +2,8 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image, CompressedImage
 from cv_bridge import CvBridge
-from geometry_msgs.msg import Point
+# from geometry_msgs.msg import Point
+from std_msgs.msg import Float32
 import cv2
 import numpy as np
 
@@ -16,9 +17,9 @@ class Detector(Node):
             self.image_callback,
             1
         )
-        self.point_pub = self.create_publisher(
-            Point,
-            '/object_point',
+        self.angle_pub = self.create_publisher(
+            Float32,
+            '/object_angle',
             10
         )
         self.debug_camera_pub  = self.create_publisher(
@@ -33,7 +34,7 @@ class Detector(Node):
         h, s, v = mean_hsv
         if s < s_min or v < v_min:
             return False
-        return (h <= 5) or (h >= 175)
+        return 70 <= h <= 110
 
     def mean_hsv_in_patch(self, hsv_img, cx, cy, r=6):
         h, w = hsv_img.shape[:2]
@@ -50,25 +51,25 @@ class Detector(Node):
         frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
 
         # resize once and use consistently
-        resized = cv2.resize(frame, (320, 240))
+        resized = cv2.resize(frame, (80, 60))
 
         # grayscale for Hough, for circle detection
         gray = cv2.cvtColor(resized, cv2.COLOR_BGR2GRAY)
         # denoise
-        gray = cv2.GaussianBlur(gray, (9, 9), 1.5)
+        # gray = cv2.GaussianBlur(gray, (9, 9), 1.5)
 
         # gather hsv
         hsv = cv2.cvtColor(resized, cv2.COLOR_BGR2HSV)
 
         circles = cv2.HoughCircles(gray, cv2.HOUGH_GRADIENT,dp=1.2,
             minDist=150, param1=180, param2=25, 
-            minRadius=15,maxRadius=2000)
+            minRadius=4,maxRadius=2000)
         red_circles = []
         if circles is not None:
             circles = np.round(circles[0]).astype(int)
 
             for (x, y, r) in circles:
-                mean_hsv = self.mean_hsv_in_patch(hsv, x, y, r=10)
+                mean_hsv = self.mean_hsv_in_patch(hsv, x, y, r=3)
                 if mean_hsv is None:
                     continue
 
@@ -76,7 +77,7 @@ class Detector(Node):
                 is_red = self.is_red_hsv(mean_hsv)
                 if not is_red:
                     continue
-                # draw circle
+                # # draw circle
                 color = (0, 255, 0) if is_red else (0, 0, 255)
                 cv2.circle(resized, (x, y), r, color, 2)
                 cv2.circle(resized, (x, y), 4, (255, 255, 255), -1)
@@ -96,15 +97,15 @@ class Detector(Node):
                     cv2.LINE_AA
                 )
                 red_circles.append([x,y,r])
-            point = Point()
-            if len(red_circles) < 0:
-                point.y = 0.0
+            angle = Float32()
+            if len(red_circles) == 0:
+                angle.data = 0.0
             else:
                 circles_sorted = sorted(red_circles, key=lambda c: c[2], reverse=True)
                 main_circle = circles_sorted[0]
-                point.y = float(160 - main_circle[0])   
-            self.point_pub.publish(point)
-            compressed_msg = self.bridge.cv2_to_imgmsg(resized)
+                angle.data = float(40 - main_circle[0]) * 0.542797397
+            self.angle_pub.publish(angle)
+            compressed_msg = self.bridge.cv2_to_imgmsg(resized, encoding='bgr8')
             self.debug_camera_pub.publish(compressed_msg)
 
 def main(args=None):

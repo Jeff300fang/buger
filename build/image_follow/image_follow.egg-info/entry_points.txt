@@ -1,3 +1,4 @@
 [console_scripts]
 detector = image_follow.detector:main
 follower = image_follow.follower:main
+lidar_detector = image_follow.lidar_detector:main

@@ -3,7 +3,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image, CompressedImage
 from cv_bridge import CvBridge
 # from geometry_msgs.msg import Point
-from std_msgs.msg import Float32
+from geometry_msgs.msg import PoseStamped
 import cv2
 import numpy as np
 
@@ -18,7 +18,7 @@ class Detector(Node):
             1
         )
         self.angle_pub = self.create_publisher(
-            Float32,
+            PoseStamped,
             '/object_angle',
             10
         )
@@ -34,7 +34,7 @@ class Detector(Node):
         h, s, v = mean_hsv
         if s < s_min or v < v_min:
             return False
-        return (h <= 5) or (h >= 175)
+        return 10 <= h <= 50
 
     def mean_hsv_in_patch(self, hsv_img, cx, cy, r=6):
         h, w = hsv_img.shape[:2]
@@ -97,14 +97,16 @@ class Detector(Node):
                     cv2.LINE_AA
                 )
                 red_circles.append([x,y,r])
-            angle = Float32()
+            angle = PoseStamped()
+            angle.header.stamp = self.get_clock().now().to_msg()
             if len(red_circles) == 0:
-                angle.data = 0.0
+                angle.pose.orientation.z = 0.0
             else:
                 circles_sorted = sorted(red_circles, key=lambda c: c[2], reverse=True)
                 main_circle = circles_sorted[0]
-                angle.data = float(40 - main_circle[0]) * 0.542797397
+                angle.pose.orientation.z = float(40 - main_circle[0]) / 40 * 0.542797397
             self.angle_pub.publish(angle)
+            self.get_logger().info("Published")
             compressed_msg = self.bridge.cv2_to_imgmsg(resized, encoding='bgr8')
             self.debug_camera_pub.publish(compressed_msg)
 

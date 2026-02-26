@@ -1,0 +1,39 @@
+[7.872s] Invoking command in '/home/burger/jeff_anu_ws/src/image_follow': PYTHONPATH=/home/burger/jeff_anu_ws/build/image_follow/prefix_override:/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/image_follow build --build-base /home/burger/jeff_anu_ws/build/image_follow/build install --record /home/burger/jeff_anu_ws/build/image_follow/install.log --single-version-externally-managed
+[9.781s] running egg_info
+[9.858s] writing ../../build/image_follow/image_follow.egg-info/PKG-INFO
+[9.861s] writing dependency_links to ../../build/image_follow/image_follow.egg-info/dependency_links.txt
+[9.862s] writing entry points to ../../build/image_follow/image_follow.egg-info/entry_points.txt
+[9.863s] writing requirements to ../../build/image_follow/image_follow.egg-info/requires.txt
+[9.864s] writing top-level names to ../../build/image_follow/image_follow.egg-info/top_level.txt
+[10.414s] reading manifest file '../../build/image_follow/image_follow.egg-info/SOURCES.txt'
+[10.438s] writing manifest file '../../build/image_follow/image_follow.egg-info/SOURCES.txt'
+[10.440s] running build
+[10.443s] running build_py
+[10.445s] copying image_follow/detector.py -> /home/burger/jeff_anu_ws/build/image_follow/build/lib/image_follow
+[10.514s] running install
+[10.518s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[10.519s] !!
+[10.520s] 
+[10.521s]         ********************************************************************************
+[10.522s]         Please avoid running ``setup.py`` directly.
+[10.523s]         Instead, use pypa/build, pypa/installer or other
+[10.524s]         standards-based tools.
+[10.525s] 
+[10.526s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[10.527s]         ********************************************************************************
+[10.528s] 
+[10.529s] !!
+[10.531s]   self.initialize_options()
+[10.589s] running install_lib
+[10.768s] copying /home/burger/jeff_anu_ws/build/image_follow/build/lib/image_follow/detector.py -> /home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages/image_follow
+[10.781s] byte-compiling /home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages/image_follow/detector.py to detector.cpython-310.pyc
+[10.793s] running install_data
+[10.975s] running install_egg_info
+[11.159s] removing '/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages/image_follow-0.0.0-py3.10.egg-info' (and everything under it)
+[11.166s] Copying ../../build/image_follow/image_follow.egg-info to /home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages/image_follow-0.0.0-py3.10.egg-info
+[11.187s] running install_scripts
+[13.003s] Installing detector script to /home/burger/jeff_anu_ws/install/image_follow/lib/image_follow
+[13.006s] Installing follower script to /home/burger/jeff_anu_ws/install/image_follow/lib/image_follow
+[13.007s] Installing lidar_detector script to /home/burger/jeff_anu_ws/install/image_follow/lib/image_follow
+[13.012s] writing list of installed files to '/home/burger/jeff_anu_ws/build/image_follow/install.log'
+[13.229s] Invoked command in '/home/burger/jeff_anu_ws/src/image_follow' returned '0': PYTHONPATH=/home/burger/jeff_anu_ws/build/image_follow/prefix_override:/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/image_follow build --build-base /home/burger/jeff_anu_ws/build/image_follow/build install --record /home/burger/jeff_anu_ws/build/image_follow/install.log --single-version-externally-managed

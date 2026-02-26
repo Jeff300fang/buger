@@ -3,7 +3,7 @@ from rclpy.node import Node
 from std_msgs.msg import Float32MultiArray
 from geometry_msgs.msg import Twist
 
-KP_ANGLE = 1.0
+KP_ANGLE = 2.0
 KD_ANGLE = 0.1
 
 KP_DISTANCE = 1.0
@@ -32,18 +32,21 @@ class Follower(Node):
         self.current_position.data = [0.0, 0.0]
 
     def position_callback(self, msg):
-        self.current_position = msg.data
+        self.current_position = msg
         self.last_msg_time = self.get_clock().now()
 
 
     def timer_callback(self):
-        dt = (self.last_msg_time - self.get_clock().now()).nanoseconds * 1e-9
+        dt = (self.get_clock().now() - self.last_msg_time).nanoseconds * 1e-9
+        twist = Twist()
+        # self.vel_pub.publish(twist)
         if dt > 0.1:
             self.current_position = Float32MultiArray()
             self.current_position.data = [0.0, 0.0]
+            self.vel_pub.publish(twist)
         twist = Twist()
         twist.angular.z = KP_ANGLE * (self.current_position.data[1])
-        twist.linear.x = KP_DISTANCE * (self.current_position.data[0] - 0.3)
+        twist.linear.x = KP_DISTANCE * (self.current_position.data[0] - 0.5)
         self.vel_pub.publish(twist)
 
 def main(args=None):

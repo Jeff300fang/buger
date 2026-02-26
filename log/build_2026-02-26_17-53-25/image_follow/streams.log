@@ -1,0 +1,45 @@
+[16.614s] Invoking command in '/home/burger/jeff_anu_ws/build/image_follow': PYTHONPATH=/home/burger/jeff_anu_ws/build/image_follow/prefix_override:/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/burger/jeff_anu_ws/build/image_follow/build --no-deps install_data
+[23.235s] running develop
+[23.240s] /usr/local/lib/python3.10/dist-packages/setuptools/command/develop.py:40: EasyInstallDeprecationWarning: easy_install command is deprecated.
+[23.241s] !!
+[23.242s] 
+[23.243s]         ********************************************************************************
+[23.245s]         Please avoid running ``setup.py`` and ``easy_install``.
+[23.246s]         Instead, use pypa/build, pypa/installer or other
+[23.251s]         standards-based tools.
+[23.253s] 
+[23.254s]         See https://github.com/pypa/setuptools/issues/917 for details.
+[23.268s]         ********************************************************************************
+[23.269s] 
+[23.269s] !!
+[23.270s]   easy_install.initialize_options(self)
+[23.452s] /usr/local/lib/python3.10/dist-packages/setuptools/_distutils/cmd.py:66: SetuptoolsDeprecationWarning: setup.py install is deprecated.
+[23.452s] !!
+[23.452s] 
+[23.453s]         ********************************************************************************
+[23.453s]         Please avoid running ``setup.py`` directly.
+[23.453s]         Instead, use pypa/build, pypa/installer or other
+[23.457s]         standards-based tools.
+[23.458s] 
+[23.458s]         See https://blog.ganssle.io/articles/2021/10/setup-py-deprecated.html for details.
+[23.460s]         ********************************************************************************
+[23.461s] 
+[23.461s] !!
+[23.462s]   self.initialize_options()
+[24.551s] running egg_info
+[24.636s] writing image_follow.egg-info/PKG-INFO
+[24.641s] writing dependency_links to image_follow.egg-info/dependency_links.txt
+[24.645s] writing entry points to image_follow.egg-info/entry_points.txt
+[24.649s] writing requirements to image_follow.egg-info/requires.txt
+[24.653s] writing top-level names to image_follow.egg-info/top_level.txt
+[24.806s] reading manifest file 'image_follow.egg-info/SOURCES.txt'
+[24.818s] writing manifest file 'image_follow.egg-info/SOURCES.txt'
+[24.921s] running build_ext
+[24.922s] Creating /home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages/image-follow.egg-link (link to .)
+[24.925s] Installing detector script to /home/burger/jeff_anu_ws/install/image_follow/lib/image_follow
+[24.927s] Installing follower script to /home/burger/jeff_anu_ws/install/image_follow/lib/image_follow
+[24.928s] Installing lidar_detector script to /home/burger/jeff_anu_ws/install/image_follow/lib/image_follow
+[24.929s] 
+[24.930s] Installed /home/burger/jeff_anu_ws/build/image_follow
+[24.930s] running install_data
+[25.340s] Invoked command in '/home/burger/jeff_anu_ws/build/image_follow' returned '0': PYTHONPATH=/home/burger/jeff_anu_ws/build/image_follow/prefix_override:/home/burger/jeff_anu_ws/install/image_follow/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py develop --editable --build-directory /home/burger/jeff_anu_ws/build/image_follow/build --no-deps install_data

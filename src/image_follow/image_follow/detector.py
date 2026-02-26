@@ -2,7 +2,8 @@ import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Image, CompressedImage
 from cv_bridge import CvBridge
-from geometry_msgs.msg import Point
+# from geometry_msgs.msg import Point
+from std_msgs.msg import Float32
 import cv2
 import numpy as np
 
@@ -16,9 +17,9 @@ class Detector(Node):
             self.image_callback,
             1
         )
-        self.point_pub = self.create_publisher(
-            Point,
-            '/object_point',
+        self.angle_pub = self.create_publisher(
+            Float32,
+            '/object_angle',
             10
         )
         self.debug_camera_pub  = self.create_publisher(
@@ -96,14 +97,14 @@ class Detector(Node):
                     cv2.LINE_AA
                 )
                 red_circles.append([x,y,r])
-            point = Point()
+            angle = Float32()
             if len(red_circles) == 0:
-                point.y = 0.0
+                angle.data = 0.0
             else:
                 circles_sorted = sorted(red_circles, key=lambda c: c[2], reverse=True)
                 main_circle = circles_sorted[0]
-                point.y = float(40 - main_circle[0])   
-            self.point_pub.publish(point)
+                angle.data = float(40 - main_circle[0]) * 0.542797397
+            self.angle_pub.publish(angle)
             compressed_msg = self.bridge.cv2_to_imgmsg(resized, encoding='bgr8')
             self.debug_camera_pub.publish(compressed_msg)
 

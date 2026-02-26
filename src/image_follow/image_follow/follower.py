@@ -1,15 +1,21 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import Point
+from std_msgs.msg import Float32MultiArray
 from geometry_msgs.msg import Twist
+
+KP_ANGLE = 1.0
+KD_ANGLE = 0.1
+
+KP_DISTANCE = 1.0
+KD_DISTANCE = 0.1
 
 class Follower(Node):
     def __init__(self):
         super().__init__('follower')
         self.point_sub = self.create_subscription(
-            Point,
-            '/object_point',
-            self.point_callback,
+            Float32MultiArray,
+            '/object_detect',
+            self.position_callback,
             10
         )
         self.vel_pub = self.create_publisher(
@@ -17,8 +23,12 @@ class Follower(Node):
             '/cmd_vel',
             10
         )
-    
-    def point_callback(self, msg):
+        self.previous_angle = 0.0
+        self.previous_distrance = 0.0
+
+        self.create_timer()
+
+    def position_callback(self, msg):
         twist = Twist()
         if msg.y > 0:
             twist.angular.z = 0.4

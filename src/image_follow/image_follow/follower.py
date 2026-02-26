@@ -42,8 +42,8 @@ class Follower(Node):
             self.current_position = Float32MultiArray()
             self.current_position.data = [0.0, 0.0]
         twist = Twist()
-        twist.angular.z = KP_ANGLE * self.current_position.data[1]
-        twist.linear.x = KP_DISTANCE * self.current_position.data[0]
+        twist.angular.z = KP_ANGLE * (self.current_position.data[1])
+        twist.linear.x = KP_DISTANCE * (self.current_position.data[0] - 0.3)
         self.vel_pub.publish(twist)
 
 def main(args=None):

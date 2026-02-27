@@ -1,1 +1,0 @@
-/home/burger/jeff_anu_ws/src/image_follow/setup.py
